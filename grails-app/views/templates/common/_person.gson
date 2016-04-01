@@ -1,3 +1,5 @@
+package templates.common
+
 import org.grails.demo.Person
 
 model {

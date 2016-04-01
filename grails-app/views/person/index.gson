@@ -4,5 +4,5 @@ model {
 	Iterable<Person> personList
 }
 
-json g.render(template:"/templates/person", collection: personList, var:'person')
+json g.render(template:"/templates/common/person", collection: personList ?: [], var:'person')
 

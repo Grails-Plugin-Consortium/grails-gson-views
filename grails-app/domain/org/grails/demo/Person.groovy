@@ -1,9 +1,8 @@
 package org.grails.demo
 
+import grails.rest.Resource
 
-import grails.rest.*
-
-@Resource(readOnly = false, formats = ['json', 'xml'])
+@Resource(uri = '/persons', readOnly = false, formats = ['json', 'xml'])
 class Person {
 
     String name

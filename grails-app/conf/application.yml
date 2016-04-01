@@ -49,7 +49,7 @@ environments:
 grails:
     views:
         json:
-            cache: false
+            cache: true
             compileStatus: true
 
 ---
