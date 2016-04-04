@@ -1,0 +1,9 @@
+package templates.common
+
+import org.grails.demo.Site
+
+model {
+	Site site
+}
+
+json g.render(site)

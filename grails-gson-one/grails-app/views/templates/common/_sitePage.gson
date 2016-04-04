@@ -1,0 +1,15 @@
+package templates.common
+
+import org.grails.demo.Site
+import org.grails.demo.Person
+
+model {
+    Site site
+}
+
+json {
+    name site.name
+    persons site.getPersons()?.collect { Person person -> person.name }
+    siteSections g.render(template: '/templates/common/siteSection', collection: site.getSiteSections(), var: 'siteSection')
+
+}

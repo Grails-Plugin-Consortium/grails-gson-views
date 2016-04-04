@@ -1,0 +1,9 @@
+package templates.common
+
+import org.grails.demo.SiteSection
+
+model {
+	SiteSection siteSection
+}
+
+json g.render(siteSection)
