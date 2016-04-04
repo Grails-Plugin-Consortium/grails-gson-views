@@ -1,9 +1,0 @@
-package templates.common
-
-import org.grails.demo.Person
-
-model {
-    Person person
-}
-
-json g.render(person)
